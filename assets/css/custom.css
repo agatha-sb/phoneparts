@@ -294,6 +294,9 @@ section[class^="asb19__"] {
   width: 30px;
   height: 30px;
 }
+[class^="swiper-button-"]:not([role="button"]) {
+  opacity: 0.2;
+}
 .asb19__swiper--nav {
   display: flex;
   align-items: center;
@@ -841,6 +844,11 @@ animation: menu-sticky 1s ease-in-out;
   display: inline-block;
   flex: 0 0 auto;
   width: 32%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.asb19__cta--single .asb19__btn {
+  margin-top: 15px;
 }
 .asb19__cta--single .asb19__content {
   padding: 30px 25px;
@@ -1108,6 +1116,11 @@ animation: menu-sticky 1s ease-in-out;
   text-transform: capitalize;
   margin-bottom: 10px;
   color: var(--clr-accent-shade);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .asb19__blog--cat a {
   display: inline-flex;
@@ -1130,6 +1143,11 @@ animation: menu-sticky 1s ease-in-out;
   font-weight: 500;
   color: var(--clr-text-light);
   gap: 30px;
+}
+.asb19__blog--image a {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .asb19__main--widget {
