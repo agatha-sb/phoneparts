@@ -109,18 +109,75 @@ var productSwiper = new Swiper(".asb19__product--swiper", {
     }
   }
 });
-var bestsellerSwiper = new Swiper(".asb19__bestseller--swiper", {
+var bestsellerSwiper1 = new Swiper(".asb19__bestseller--swiper1", {
   autoPlay: false,
   spaceBetween: 15,
-  // grid: {
-  //   rows: 2,
-  // },
   autoplay: {
     delay: 3000,
   },
   navigation: {
-    nextEl: ".swiper-button-next-bestsellerSW",
-    prevEl: ".swiper-button-prev-bestsellerSW",
+    nextEl: ".swiper-button-next-bestsellerSW1",
+    prevEl: ".swiper-button-prev-bestsellerSW1",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    }
+  }
+});
+var bestsellerSwiper2 = new Swiper(".asb19__bestseller--swiper2", {
+  autoPlay: false,
+  spaceBetween: 15,
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-bestsellerSW2",
+    prevEl: ".swiper-button-prev-bestsellerSW2",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    }
+  }
+});
+var bestsellerSwiper3 = new Swiper(".asb19__bestseller--swiper3", {
+  autoPlay: false,
+  spaceBetween: 15,
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-bestsellerSW3",
+    prevEl: ".swiper-button-prev-bestsellerSW3",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    }
+  }
+});
+var bestsellerSwiper4 = new Swiper(".asb19__bestseller--swiper4", {
+  autoPlay: false,
+  spaceBetween: 15,
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-bestsellerSW4",
+    prevEl: ".swiper-button-prev-bestsellerSW4",
   },
   pagination: {
     el: ".swiper-pagination",
