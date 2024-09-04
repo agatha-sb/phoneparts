@@ -798,6 +798,7 @@ animation: menu-sticky 1s ease-in-out;
   align-items: center;
   background-color: #f4f8fc;
   padding: 20px 12px;
+  border-radius: 10px;
 }
 .asb19__category--list li {
   font-size: 13px;

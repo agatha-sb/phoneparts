@@ -38,8 +38,8 @@ var heroSwiper = new Swiper(".asb19__hero--swiper", {
     delay: 3000,
   },
   navigation: {
-    nextEl: ".swiper-button-next-agentsSW",
-    prevEl: ".swiper-button-prev-agentsSW",
+    nextEl: ".swiper-button-next-heroSW",
+    prevEl: ".swiper-button-prev-heroSW",
   },
   pagination: {
     el: ".swiper-pagination",
