@@ -751,6 +751,27 @@ animation: menu-sticky 1s ease-in-out;
   border-radius: 0 5px 5px 5px;
   margin-bottom: 12px;
 }
+.asb19__hero--wrap {
+  margin-top: 30px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.asb19__hero--swiper .swiper-button-prev-heroSW {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background-color: var(--clr-white);
+}
+.asb19__hero--swiper .swiper-button-next-heroSW {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background-color: var(--clr-white);
+}
 .asb19__carousel {
   /* margin-top: 30px; */
   /* border-radius: 16px; */
