@@ -465,7 +465,7 @@ animation: menu-sticky 1s ease-in-out;
   animation: menusticky 1s ease-in-out;
 }
 .asb19__header--top {
-  padding: 6px 0;
+  background-color: #f4f8fc;
 }
 .asb19__header--icon-single > * {
   display: inline-flex;
@@ -494,12 +494,20 @@ animation: menu-sticky 1s ease-in-out;
   display: flex;
   align-items: center;
 }
+.asb19__header--enterprise.active {
+  background-color: #fff;
+  padding: 0 15px;
+  border: 1px solid #f1f1f1;
+  border-bottom: none;
+}
+
 .asb19__header--enterprise img {
   height: 20px;
 }
 .asb19__header--enterprise h6 {
   font-size: 14px;
   margin-left: 7px;
+  line-height: 40px;
 }
 .asb19__header--misc {
   display: flex;
