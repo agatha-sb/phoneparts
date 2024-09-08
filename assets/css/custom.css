@@ -1250,6 +1250,52 @@ animation: menu-sticky 1s ease-in-out;
   margin-top: 15px;
 }
 /** ----------------------------
+*   Section: Newsletter Start
+**  --------------------------*/
+
+.asb19__newsletter--wrap {
+  background-color: var(--clr-accent-shade);
+  background: var(--clr-accent-shade) url("../images/bg-newsletter.svg") no-repeat right 10px bottom 10px;
+  position: relative;
+  padding: 90px 40px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.asb19__heading h3 span {
+  color: var(--clr-yellow);
+}
+.asb19__newsletter--form {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.asb19__newsletter--wrap .asb19__main--widget {
+  margin-bottom: 0;
+  border: none;
+  padding-bottom: 0;
+}
+.asb19__newsletter--form .form-control {
+  border: none;
+  padding: 0 20px;
+  height: 45px;
+  border-radius: 0;
+  background-color: #fbfbfb;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgb(132, 132, 132);
+}
+.asb19__newsletter--form .form-group.form-button .asb19__btn {
+  height: 45px;
+}
+.asb19__newsletter--wrap .asb19__main--widget .asb19__heading {
+  margin-bottom: 10px;
+}
+.asb19__newsletter--wrap .asb19__main--widget p {
+  font-size: 20px;
+}
+/** ----------------------------
+*   Section: Newsletter Start
+**  --------------------------*/
+/** ----------------------------
 *      Section: Footer Start
 **  --------------------------*/
 .asb19__footer {
