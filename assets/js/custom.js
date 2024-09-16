@@ -31,6 +31,16 @@ $(document).ready(function(){
 })
 
 
+$(document).ready(function() {
+  $('.asb19__category--item.has-children .caret').on('click', function() {
+      $('.asb19__category--sub-1').not($(this).siblings('.asb19__category--sub-1')).slideUp();
+      $(this).siblings('.asb19__category--sub-1').slideToggle();
+      $('.caret').not(this).removeClass('show');
+      $(this).toggleClass('show');
+  });
+});
+
+
 var heroSwiper = new Swiper(".asb19__hero--swiper", {
   autoPlay: false,
   spaceBetween: 0,
@@ -187,6 +197,36 @@ var bestsellerSwiper4 = new Swiper(".asb19__bestseller--swiper4", {
     0: {
       slidesPerView: 1
     }
+  }
+});
+var relatedSwiper = new Swiper(".asb19__related--swiper", {
+  autoPlay: false,
+  spaceBetween: 15,
+  autoplay: {
+    delay: 3000,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-relatedSW",
+    prevEl: ".swiper-button-prev-relatedSW",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1
+    },
+    480: {
+      slidesPerView: 2
+    },
+    768: {
+      slidesPerView: 3
+    },
+    1024: {
+      slidesPerView: 4
+    }
+
   }
 });
 var promotionSwiper = new Swiper(".asb19__promotion--swiper", {
