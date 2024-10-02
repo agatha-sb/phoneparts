@@ -342,3 +342,36 @@ $('.popup-youtube').magnificPopup({
     }
   }
 });
+
+$(function() {
+	$( "#slider-range" ).slider({
+	  range: true,
+	  min: 0,
+	  max: 5999,
+	  values: [ 0, 5999 ],
+	  slide: function( event, ui ) {
+		$( "#amount" ).val( "₹" + ui.values[ 0 ] + " - ₹" + ui.values[ 1 ] );
+	  }
+	});
+	$( "#amount" ).val( "₹" + $( "#slider-range" ).slider( "values", 0 ) +
+	  " - ₹" + $( "#slider-range" ).slider( "values", 1 ) );
+});
+
+
+$(document).ready(function() {
+  $('.asb19__shop--grid li').click(function() {
+    var gridVal = $(this).data('val');
+    // Remove 'active' class from all 'li' and add it to the clicked one
+    $('.asb19__shop--grid li').removeClass('active');
+    $(this).addClass('active');
+    $('.asb19__shop--products .row').removeClass(function(index, className) {
+      return (className.match(/(^|\s)row-cols-\S+/g) || []).join(' ');
+    });
+    $('.asb19__shop--products .row').addClass('row-cols-' + gridVal);
+    if (gridVal === 1) {
+      $('.asb19__product--single').addClass('asb19__product--list-view');
+    } else {
+      $('.asb19__product--single').removeClass('asb19__product--list-view');
+    }
+  });
+});
