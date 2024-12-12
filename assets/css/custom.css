@@ -2010,3 +2010,52 @@ input[type="checkbox"] {
 /* SHOP PAGE */
 
 /** =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ INNER PAGES END =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ */
+
+
+.confetti {
+  position: absolute;
+  width: 5px;
+  height: 8px;
+  background-color: red;
+  opacity: 0.7;
+  animation: confetti-fall 3s linear infinite, confetti-spin 1.5s ease-in-out infinite;
+  transform-origin: center;
+}
+.confetti:nth-child(2n) { background-color: blue; }
+.confetti:nth-child(3n) { background-color: yellow; }
+.confetti:nth-child(4n) { background-color: purple; }
+.confetti:nth-child(5n) { background-color: green; }
+.confetti:nth-child(6n) { background-color: orange; }
+
+@keyframes confetti-fall {
+  0% {
+    top: -10px;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    top: 100vh;
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+
+@keyframes confetti-spin {
+  0% { transform: rotateZ(0deg) rotateY(0deg); }
+  100% { transform: rotateZ(360deg) rotateY(180deg); }
+}
+
+#confetti-container {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.mk2-winner__modal .modal-body {
+  --bs-modal-padding: 0;
+}
+.mk2-winner__modal .modal-dialog {
+  overflow: hidden;
+}

@@ -375,3 +375,21 @@ $(document).ready(function() {
     }
   });
 });
+
+
+$(document).ready(function() {
+  $('#winnerModal').modal('show');
+  let confettiCount = 150;
+  for (let i = 0; i < confettiCount; i++) {
+    let confetti = $('<div class="confetti"></div>');
+    $('#confetti-container').append(confetti);
+    confetti.css({
+      'left': Math.random() * 100 + '%',
+      'animation-duration': (Math.random() * 2 + 3) + 's',
+      'animation-delay': Math.random() * 2 + 's'
+    });
+  }
+  setTimeout(function() {
+    $('#winnerModal').modal('hide');
+  }, 7000);
+});
