@@ -2008,54 +2008,58 @@ input[type="checkbox"] {
   height: 16px;
 }
 /* SHOP PAGE */
+/* BLOG PAGE */
+
+.asb19__filter--toolbar-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  line-height: 35px;
+}
+.asb19__filter--toolbar label, .asb19__filter--toolbar p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #979797;
+  min-width: 60px;
+}
+.asb19__filter--toolbar-right > * + * {
+  margin-left: 16px;
+  padding-left: 16px;
+  border-left: 1px solid #e5e5e5;
+}
+.asb19__filter--toolbar-sort form {
+  display: flex;
+  align-items: center;
+}
+.asb19__filter--toolbar-sort form .form-select {
+  padding: 0 20px 0 0;
+  border: none;
+  font-size: 14px;
+  color: var(--clr-accent);
+  font-weight: 600;
+  text-transform: capitalize;
+  box-shadow: none;
+}
+.asb19__filter--grid {
+  display: flex;
+  gap: 5px;
+}
+.asb19__filter--grid li {
+  background-color: #f6f6f6;
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.asb19__filter--grid li img {
+  filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+.asb19__filter--grid li.active img {
+  filter: unset;
+}
+/* BLOG PAGE */
 
 /** =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ INNER PAGES END =+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+ */
 
 
-.confetti {
-  position: absolute;
-  width: 5px;
-  height: 8px;
-  background-color: red;
-  opacity: 0.7;
-  animation: confetti-fall 3s linear infinite, confetti-spin 1.5s ease-in-out infinite;
-  transform-origin: center;
-}
-.confetti:nth-child(2n) { background-color: blue; }
-.confetti:nth-child(3n) { background-color: yellow; }
-.confetti:nth-child(4n) { background-color: purple; }
-.confetti:nth-child(5n) { background-color: green; }
-.confetti:nth-child(6n) { background-color: orange; }
-
-@keyframes confetti-fall {
-  0% {
-    top: -10px;
-    opacity: 1;
-    transform: translateX(0);
-  }
-  100% {
-    top: 100vh;
-    opacity: 0;
-    transform: translateX(50px);
-  }
-}
-
-@keyframes confetti-spin {
-  0% { transform: rotateZ(0deg) rotateY(0deg); }
-  100% { transform: rotateZ(360deg) rotateY(180deg); }
-}
-
-#confetti-container {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-.mk2-winner__modal .modal-body {
-  --bs-modal-padding: 0;
-}
-.mk2-winner__modal .modal-dialog {
-  overflow: hidden;
-}
